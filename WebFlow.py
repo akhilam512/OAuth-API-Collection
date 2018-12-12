@@ -39,7 +39,7 @@ ind = redirect_response.find("&code=") + 6
 
 code = redirect_response[ind:]
 
-api_url_base    = "https://api-ssl.bitly.com/oauth/access_token?client_id=aadbabdf05cf85001538249359cedf3e3ad87235&client_secret=5211d81ade2f88af0ff1d7f21b5b5deb0a1c2e7d&code="+code
+api_url_base    = "https://api-ssl.bitly.com/oauth/access_token?client_id=+ client_id+ "&client_secret=+"+ client_secret +"&code="+code
 token                   = oauth.fetch_token(api_url_base, authorization_response=redirect_response)  #json 
 
 print(token)
