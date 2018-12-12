@@ -6,3 +6,6 @@ Using Bitly API, this python script, on input of a long URL returns a shortened 
 
 ### 2. GitHub
 Using GitHub API, an access token can be returned after OAuth has been done.
+
+
+Contributions are welcome :)
