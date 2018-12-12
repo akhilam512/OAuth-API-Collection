@@ -6,7 +6,7 @@ At the authentication page, login with your bitly account and allow the web app.
 
 
 There is an alternative way, I believe : 
-Access tokens can be directly exchanged for username and password in Bitly API, I have not used this method in this script.
+Access tokens can be directly exchanged for username and password in Bitly API, I have not used this approach in this script.
 
 
 """
@@ -45,7 +45,7 @@ token                   = oauth.fetch_token(api_url_base, authorization_response
 print(token)
 long_url = input("Enter your URL: \n")
 pydata = {
-    "group_guid": "Bial8svtjwM",  #get group guid by sending get request to the guid link mentioned in documentation
+    "group_guid": "your_group_guid",  #get group guid by sending get request to the guid link mentioned in documentation
     "domain": "bit.ly",   
     "long_url": long_url,
     
